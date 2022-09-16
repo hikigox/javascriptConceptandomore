@@ -1,0 +1,52 @@
+
+# callbacks, Promises and Async-await function
+
+## Cuando hablamos de ellas ?
+
+Cuando queremos trabajar con funciones asyncronas, es decir ejecuciones paralelas al resto del codigo. Para esto usamos los conocidos callbacks o promesas.
+
+
+## Que son Callbacks ?
+Son funciones que pasamos como argumento a otra funcion.
+
+Cuando usamos callbacks ?
+Estos se utilizan cuando nosotros tenemos por ejemplo necesitamos que una funcion se ejecute despues de otra, pero que al esta demorarse o estar configurada de una manera no sincrona no se pueda ver esto. Ver [ejemplo 1.1](https://github.com/hikigox/javascriptConceptandomore/blob/main/src/callbacks_promises/callbacks/example1_1.ts)
+
+
+
+## Que es una promesa ?
+Es un objeto que tiene algo que se tiene que hacer o completar en el futuro. 
+Pero en si es la definicion natural de una promesa. La cual es algo que se compromete uno o otra persona a realizar en un futuro. La diferencia al igual que en la vida real es que esta promesa se puede cumplir o no.
+
+## Caracteristicas de promesa ?
+Fulfilled : Cumplido, cuando se cumple la promesa
+Pending: En espera, todavia no se sabe si se va cumplir.
+Rejected: Rechazado, No se cumple la promesa.
+
+ver [ejemplo 1.1 ](https://github.com/hikigox/javascriptConceptandomore/blob/main/src/callbacks_promises/promises/example1_1.ts)
+
+
+
+Pero espera estoy viendo que la promesa como tal no me recibe argumentos :c. Pero si yo le quiero pasar argumentos como seria ?
+Bueno, para esto partiremos de una base y es que una promesa es un objeto por ende este puede declararse dentro de una funcion y segidamente ejecutarse. Entonces aplicando esta logica podemos hacer uso de esto para pasarle argumentos. Ver [ejemplo 1.2.](https://github.com/hikigox/javascriptConceptandomore/blob/main/src/callbacks_promises/promises/example1_2.ts)
+
+## Conclusion:
+
+Las dos son formas de trabajar la asyncronia dentro de javascript. Digamos que la mayor diferencia se nota en cuanto a mayor cantidad de funciones asyncronas concatenadas. Donde con promesas esto es mucho mas manejable
+
+#### CALLBACK HELL:
+![CALLBACK HELL](https://user-images.githubusercontent.com/13682994/37593813-486d2a7a-2bae-11e8-98ca-821a240b681c.png
+)
+
+
+
+
+# Async function / await
+
+## Que son las funciones con la preposicion Async ?
+
+Sencillamente es azucar cintactico para hablar de promesas. Donde el async lo que dice es que dicha funcion va retornar una promesa y el await es para eliminar el uso del then y el catch, es decir que nos retorne directamente lo del resolve o rejected. Para manejar estos estados lo que se hace es uso del try-catch donde en el try se vincula lo que es el resolve y en el catch el rejected.
+Ver [ejemplo 1.1](https://github.com/hikigox/javascriptConceptandomore/blob/main/src/callbacks_promises/async/example1_1.ts)
+
+
+
