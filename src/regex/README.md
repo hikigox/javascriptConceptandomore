@@ -26,7 +26,7 @@ Dentro de este tenemos los siguientes
 |Grupos y rangos| \|| entre dos palabras o letras| nos permite decir si es una palabra, letra o patron o otro.|
 |Grupo y rangos| [x-y] |despues de una letra| nos permite decir que la letra que tiene a la izquierda tiene que ser una de las que este en el rango (letra,numero,simbolo?), teniendo en cuenta si es mayuscula o no |
 |Asersion Anticipada| (x) | despues de una letra| valida si despues de una X asesion condicional|
-|Asersion condicional| =? | dentro de una asersion anticipada (talvez de otra manera)| nos perimte decir que luego de la palabra exista un patron despues|
+|Asersion condicional| ?= | dentro de una asersion anticipada (talvez de otra manera)| nos perimte decir que luego de la palabra exista un patron despues|
 |Asersion condicional | ?! | dentro de una asersion anticipada (talvez de otra manera)| Nos dice que despues de la palabra no puede existir el patron que le sigue
 |especificacion| u| al final del patron| Nos permite evaluar emoticones |
 |comodin| \\ | antes del caracter especial| Busca el caracter espcial si este hace parte de los posibles simbolos de regex
