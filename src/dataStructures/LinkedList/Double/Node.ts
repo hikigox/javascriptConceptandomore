@@ -9,13 +9,14 @@
 
  */
 
+import { Nodes_Generic } from "../Node_generic";
 
-export class Node_ {
-    element : any;
-    siguiente: Node_|null;
+
+export class Node_ extends Nodes_Generic{
+    siguiente:Node_|null;
     anterior: Node_|null;
     constructor(element : any){
-        this.element = element;
+        super(element);
         this.siguiente = null;
         this.anterior = null;
     }
