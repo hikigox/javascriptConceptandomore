@@ -12,10 +12,8 @@
 
 export class Nodes_Generic {
     element : any;
-    siguiente: Nodes_Generic|null;
     constructor(element : any){
         this.element = element;
-        this.siguiente = null;
 
     }
 

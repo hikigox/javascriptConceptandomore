@@ -25,7 +25,7 @@ es decir se pueden usar con Array.metodo, no son propiamente de un arreglo que y
 
 * from : crea una nueva instancia de array a partir de algo similar a un array (string,un arreglo)
 * isArray: dice si es un array bool
-* of: crea un arreglo con los elementos que le pasemos o con un tamaño predefinido
+* of: crea un arreglo con los elementos que le pasemos.
 #### Metodos de instancia:
 
 Son metodos que se hacen a partir de un arreglo ya creado
