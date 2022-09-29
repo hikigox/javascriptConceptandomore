@@ -22,10 +22,7 @@ class Stack {
         }
     }
     pop() {
-        if (this.stack.length >= 1) {
-            this.stack.pop();
-        }
-        else {
+        if (this.stack.pop() === undefined) {
             console.log("Sin elementos en la pila");
         }
     }
